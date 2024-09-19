@@ -28,7 +28,7 @@ class DbConnection:
 
     def connect_to_sql_connection_ashutosh_approach(self,server, database, username, password):
         try:
-            DSN = 'ODBC-SQL'  # Name of your Data Source Name
+            DSN = 'OD1BC-SQL'  # Name of your Data Source Name
             UID = os.getenv('DB_USER')  # Username
             PWD = os.getenv('DB_PWD')  # Password
             conn = pyodbc.connect('DSN=' + DSN + ';UID=' + UID + ';PWD=' + PWD + ';DATABASE=AudioTrans')

@@ -58,7 +58,7 @@ class GlobalUtility:
             }
         return api_object
 
-    def set_json_format(self,result =[],status_code =200, status=True, message=None):
+    def set_json_format(self,result =[], status_code =200, status=True, message=None):
         response_message = 'Record has been updated successfully..'
         if message is not None:
             response_message = message

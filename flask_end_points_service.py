@@ -817,7 +817,7 @@ def update_transcribe_audio_text(server_name, database_name, client_id, file_id)
     transcript = None
     from datetime import datetime
     try:
-        logger.log_entry_into_sql_table(server_name, database_name, client_id, False)
+        # logger.log_entry_into_sql_table(server_name, database_name, client_id, False)
         #applied sleep for each thread
         time.sleep(10)
         connection_string = get_connection_string(server_name, database_name, client_id)
